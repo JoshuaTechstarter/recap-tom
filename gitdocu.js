@@ -9,5 +9,11 @@ const fetchGitWorkflowImage = async () => {
     return;
   }
 
-  gitDocuContainer.innerHTML = `<img src="${imagePath}" alt="Git Workflow" style="max-width: 100%; height: auto; border: 2px solid #000; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">`;
+  gitDocuContainer.innerHTML = `<img src=${imagePath} alt="Git Workflow" style="max-width: 100%; height: auto; border: 2px solid #000; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">`;
+};
+
+
+window.onload = () => {
+  fetchGitWorkflowImage();
+
 };
